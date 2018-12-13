@@ -6,7 +6,7 @@ RUN apk --update add \
     python \
     py-pip \
     jq \
-    && pip install awscli \
+    && pip install awscli==1.16.74 \
     && apk del py-pip \
     && rm -rf /var/cache/apk/*
 
